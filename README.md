@@ -58,9 +58,19 @@ Total                              $60,000.00
 
 ## Elsewhere
 
-Published copies of this project (updated as they go live):
+Published copies of this project:
 
-- (filled in after publishing)
+- GitHub release (APK, AAB, extension and theme zips): https://github.com/nbkdevs/kitchen-remodeling-bellevue/releases/tag/v1.0.0
+- npm: https://www.npmjs.com/package/kitchen-remodeling-cost
+- PyPI: https://pypi.org/project/kitchen-remodeling-cost/
+- crates.io: https://crates.io/crates/kitchen-remodeling-cost (docs: https://docs.rs/kitchen-remodeling-cost)
+- pub.dev: https://pub.dev/packages/kitchen_remodeling_cost
+- NuGet: https://www.nuget.org/packages/BellevueKitchenPros.KitchenRemodelingCost/
+- RubyGems: https://rubygems.org/gems/kitchen-remodeling-cost
+- Docker Hub: https://hub.docker.com/r/iamnazzal/kitchen-remodeling-cost
+- Hugging Face Space: https://huggingface.co/spaces/iamnazzal/kitchen-remodeling-cost-planner
+- ClawHub skill: https://clawhub.ai/nbkdevs/kitchen-remodeling-budget
+- Package indexes: https://socket.dev/npm/package/kitchen-remodeling-cost, https://libraries.io/npm/kitchen-remodeling-cost, https://pypistats.org/packages/kitchen-remodeling-cost, https://npm.io/package/kitchen-remodeling-cost
 
 ## License
 
