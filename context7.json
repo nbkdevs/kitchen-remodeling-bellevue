@@ -1,0 +1,12 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "Kitchen Remodeling Cost Planner",
+  "description": "Kitchen remodeling budget split by line item with sales tax, contingency reserve and permit allowance; libraries for npm, PyPI, crates.io, pub.dev, NuGet, RubyGems and Packagist.",
+  "folders": ["packages", "skills"],
+  "excludeFolders": ["app/android", "packages/**/test", "packages/**/tests", "vendor"],
+  "rules": [
+    "Money is computed in integer cents; round(x) = floor(x + 0.5).",
+    "Split mode treats the amount as all-in (tax, reserve and permit included); estimate mode adds them on top.",
+    "Default sales tax is 10.3% (Bellevue, WA, Oct to Dec 2026) and default reserve is 10%; both are options."
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "manifest_version": 3,
+  "name": "Walnut Morning",
+  "version": "1.0.0",
+  "description": "A warm wood theme: a walnut frame, a soft cream toolbar and a sunlit countertop on every new tab.",
+  "theme": {
+    "images": {
+      "theme_frame": "images/theme_frame.png",
+      "theme_toolbar": "images/theme_toolbar.png",
+      "theme_ntp_background": "images/theme_ntp_background.png",
+      "theme_tab_background": "images/theme_tab_background.png"
+    },
+    "colors": {
+      "frame": [
+        78,
+        50,
+        30
+      ],
+      "frame_inactive": [
+        110,
+        80,
+        56
+      ],
+      "toolbar": [
+        250,
+        243,
+        232
+      ],
+      "tab_text": [
+        62,
+        40,
+        24
+      ],
+      "tab_background_text": [
+        246,
+        230,
+        210
+      ],
+      "bookmark_text": [
+        78,
+        50,
+        30
+      ],
+      "ntp_background": [
+        236,
+        222,
+        200
+      ],
+      "ntp_text": [
+        62,
+        40,
+        24
+      ],
+      "ntp_link": [
+        138,
+        90,
+        54
+      ],
+      "ntp_header": [
+        78,
+        50,
+        30
+      ],
+      "ntp_section": [
+        250,
+        243,
+        232
+      ],
+      "button_background": [
+        138,
+        90,
+        54
+      ],
+      "toolbar_button_icon": [
+        110,
+        72,
+        44
+      ],
+      "omnibox_background": [
+        255,
+        251,
+        245
+      ],
+      "omnibox_text": [
+        62,
+        40,
+        24
+      ]
+    },
+    "tints": {
+      "buttons": [
+        0.07,
+        0.45,
+        0.35
+      ],
+      "frame": [
+        -1,
+        -1,
+        -1
+      ],
+      "frame_inactive": [
+        -1,
+        -1,
+        -1
+      ],
+      "background_tab": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "properties": {
+      "ntp_background_alignment": "center",
+      "ntp_background_repeat": "no-repeat",
+      "ntp_logo_alternate": 1
+    }
+  }
+}

@@ -1,0 +1,16 @@
+# Kitchen Remodeling Cost Planner
+
+> Split a kitchen remodel budget by line item and add sales tax, a contingency reserve and a permit allowance. Same maths in JavaScript, Python, Rust, Dart, C#, Ruby and PHP, plus a Docker API and a browser calculator.
+
+## Docs
+
+- [README](https://github.com/nbkdevs/kitchen-remodeling-bellevue/blob/main/README.md): overview, install, links
+- [Shared spec](https://github.com/nbkdevs/kitchen-remodeling-bellevue/blob/main/packages/SPEC.md): line items, presets, integer-cent arithmetic
+- [npm package](https://github.com/nbkdevs/kitchen-remodeling-bellevue/blob/main/packages/npm/README.md): `splitBudget`, `estimate`, `estimatePreset`, `formatTable`
+- [PyPI package](https://github.com/nbkdevs/kitchen-remodeling-bellevue/blob/main/packages/pypi/README.md): `split_budget`, `estimate`, `estimate_preset`
+- [Docker API](https://github.com/nbkdevs/kitchen-remodeling-bellevue/blob/main/packages/docker/README.md): `/api/split`, `/api/estimate`, `/api/preset/<name>`
+- [Agent skill](https://github.com/nbkdevs/kitchen-remodeling-bellevue/blob/main/skills/kitchen-remodeling-budget/SKILL.md): step-by-step procedure
+
+## Optional
+
+- [Kitchen Remodeling Bellevue](https://wakitchenremodelingbellevue.com/): kitchen remodel cost guides and line-item bids

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cabinet &amp; Countertop Measure</title>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header>
+  <h1>Cabinet &amp; Countertop Measure</h1>
+  <label class="unit">Units
+    <select id="unit"><option value="in">inches</option><option value="cm">cm</option></select>
+  </label>
+</header>
+<nav role="tablist">
+  <button role="tab" data-tab="counter" aria-selected="true">Countertop</button>
+  <button role="tab" data-tab="splash" aria-selected="false">Backsplash</button>
+  <button role="tab" data-tab="cab" aria-selected="false">Cabinet run</button>
+</nav>
+
+<section id="counter" class="panel">
+  <p class="hint">Add each straight run. Depth is usually 25.5 in (65 cm). Lengths accept 25 1/2, 2' 6" or 76cm.</p>
+  <div id="pieces" class="rows"></div>
+  <button type="button" class="add" data-add="pieces">+ Add run</button>
+  <h2>Cutouts</h2>
+  <div id="cutouts" class="rows"></div>
+  <button type="button" class="add" data-add="cutouts">+ Add cutout</button>
+  <label class="inline">Extra for seams and offcuts <input id="cWaste" type="number" min="0" max="100" value="10"> %</label>
+  <div class="result" id="cOut"></div>
+</section>
+
+<section id="splash" class="panel" hidden>
+  <p class="hint">Wall sections between counter and upper cabinets (often 18 in / 46 cm high).</p>
+  <div id="walls" class="rows"></div>
+  <button type="button" class="add" data-add="walls">+ Add wall</button>
+  <div class="grid">
+    <label>Tile width<input id="tW" value="3"></label>
+    <label>Tile height<input id="tH" value="6"></label>
+    <label>Openings (sq ft)<input id="open" type="number" min="0" value="0"></label>
+    <label>Waste %<input id="sWaste" type="number" min="0" max="100" value="10"></label>
+    <label>Tiles per box<input id="perBox" type="number" min="0" value=""></label>
+  </div>
+  <div class="result" id="sOut"></div>
+</section>
+
+<section id="cab" class="panel" hidden>
+  <p class="hint">Wall length for a run of base or wall cabinets. Boxes come in 3 in steps from 9 to 36 in.</p>
+  <div class="grid">
+    <label>Wall length<input id="runLen" value="10' 6&quot;"></label>
+    <label>Keep for filler / scribe<input id="filler" value="1"></label>
+  </div>
+  <div class="result" id="kOut"></div>
+</section>
+
+<footer>Works offline. Nothing leaves your browser.</footer>
+<script src="js/measure.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+:root{--wood:#8a5a36;--wood-d:#5e3b22;--cream:#fbf6ef;--ink:#2b2119;--muted:#7a6a5c;--line:#e8dccd;--accent:#2f6b5a}
+*{box-sizing:border-box}
+body{margin:0;width:380px;min-height:480px;font:13px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--cream);color:var(--ink)}
+header{display:flex;align-items:center;justify-content:space-between;background:linear-gradient(135deg,var(--wood-d),var(--wood));color:#fff;padding:10px 12px}
+h1{font-size:15px;margin:0}
+h2{font-size:13px;margin:12px 0 4px}
+.unit{font-size:12px;color:#fff}
+.unit select{margin-left:4px;border-radius:6px;border:0;padding:2px 4px}
+nav{display:flex;gap:4px;padding:8px 10px 0}
+nav button{flex:1;border:1px solid var(--line);background:#fff;border-radius:8px 8px 0 0;padding:6px 4px;font-weight:600;color:var(--muted);cursor:pointer}
+nav button[aria-selected=true]{background:var(--cream);color:var(--wood-d);border-bottom-color:var(--cream)}
+.panel{padding:8px 12px 12px;border-top:1px solid var(--line)}
+.hint{color:var(--muted);margin:4px 0 8px;font-size:12px}
+.rows .row{display:grid;grid-template-columns:1fr 1fr 24px;gap:6px;margin-bottom:6px;align-items:end}
+label{display:block;font-size:11px;color:var(--muted)}
+input{width:100%;padding:5px 6px;border:1px solid var(--line);border-radius:6px;font-size:13px;color:var(--ink);background:#fff;margin-top:2px}
+.inline{display:flex;align-items:center;gap:6px;margin-top:8px}
+.inline input{width:60px;margin:0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 8px}
+.del{border:0;background:none;color:#b3261e;font-size:16px;cursor:pointer;padding:0 0 4px}
+.add{border:1px dashed var(--wood);background:none;color:var(--wood-d);border-radius:6px;padding:3px 8px;cursor:pointer;font-size:12px}
+.result{margin-top:10px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:8px 10px}
+.result .big{font-size:20px;font-weight:700;color:var(--wood-d)}
+.result .err{color:#b3261e}
+.result table{width:100%;border-collapse:collapse;margin-top:4px}
+.result td{padding:2px 0}
+.result td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.chip{background:var(--cream);border:1px solid var(--line);border-radius:999px;padding:1px 8px;font-size:12px}
+footer{color:var(--muted);font-size:11px;text-align:center;padding:6px 0 10px}
