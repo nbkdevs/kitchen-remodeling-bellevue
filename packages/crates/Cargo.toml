@@ -1,0 +1,21 @@
+[package]
+name = "kitchen-remodeling-cost"
+version = "1.0.0"
+edition = "2021"
+description = "Kitchen remodeling cost planner: split a kitchen remodel budget by line item, add sales tax, a contingency reserve and permits. Library + CLI, no dependencies."
+license = "MIT"
+authors = ["Bellevue Kitchen Pros"]
+homepage = "https://wakitchenremodelingbellevue.com/"
+documentation = "https://docs.rs/kitchen-remodeling-cost"
+repository = "https://github.com/nbkdevs/kitchen-remodeling-bellevue"
+readme = "README.md"
+keywords = ["kitchen", "remodeling", "budget", "renovation", "calculator"]
+categories = ["finance", "command-line-utilities"]
+include = ["src/**", "Cargo.toml", "README.md", "LICENSE"]
+
+[lib]
+name = "kitchen_remodeling_cost"
+
+[[bin]]
+name = "kitchen-remodeling-cost"
+path = "src/bin/cli.rs"

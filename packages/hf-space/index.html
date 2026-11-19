@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kitchen Remodeling Budget Calculator</title>
+<meta name="description" content="Kitchen remodeling budget calculator: split a kitchen remodel budget by line item and add sales tax, a contingency reserve and permits.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Kitchen Remodeling Budget Calculator</h1>
+  <p>Split a kitchen remodel budget into 12 line items, then add sales tax, a contingency reserve and a permit allowance. Everything runs in your browser.</p>
+</header>
+<main>
+  <section class="card" aria-label="Inputs">
+    <div class="tabs" role="tablist">
+      <button role="tab" data-mode="split" aria-selected="true">Split my budget</button>
+      <button role="tab" data-mode="estimate" aria-selected="false">Price a scope</button>
+    </div>
+    <p class="hint" id="modeHint"></p>
+    <label>Amount (USD)
+      <input id="amount" type="number" min="0" step="100" value="60000" inputmode="decimal">
+    </label>
+    <div class="presets" id="presets" aria-label="Cost vs Value presets"></div>
+    <div class="grid">
+      <label>Sales tax %<input id="tax" type="number" min="0" max="100" step="0.1" value="10.3"></label>
+      <label>Contingency %<input id="cont" type="number" min="0" max="100" step="1" value="10"></label>
+      <label>Permit allowance $<input id="permit" type="number" min="0" step="100" value="1500"></label>
+    </div>
+    <details>
+      <summary>Adjust line item shares</summary>
+      <div id="shares" class="shares"></div>
+      <button type="button" id="resetShares" class="link">Reset to defaults</button>
+    </details>
+    <p class="err" id="err" role="alert"></p>
+  </section>
+  <section class="card" aria-label="Results">
+    <div class="total"><span>Total</span><strong id="total">$0.00</strong></div>
+    <table id="table"><thead><tr><th>Line item</th><th>Share</th><th>Amount</th></tr></thead><tbody></tbody><tfoot></tfoot></table>
+    <button type="button" id="copy">Copy as CSV</button>
+  </section>
+  <section class="card notes">
+    <h2>Where the numbers come from</h2>
+    <ul>
+      <li>Line item shares: HomeGuide's kitchen remodel cost breakdown (cabinets 25%, labor 15%, appliances 15% and so on).</li>
+      <li>Presets: Cost vs Value 2025, Pacific region averages for a 200 sq ft kitchen: minor midrange $29,728, major midrange $86,480, major upscale $171,950.</li>
+      <li>Sales tax: 10.3% is the Bellevue, WA combined rate for October to December 2026. Washington taxes the full contract price, labor included. Change it for your address.</li>
+      <li>Permit allowance is a planning number, not a fee quote.</li>
+    </ul>
+    <p>Planning a remodel near Seattle's Eastside? See <a href="https://wakitchenremodelingbellevue.com/" target="_blank">Kitchen Remodeling Bellevue</a> for cost guides and a written, line-item bid.</p>
+  </section>
+</main>
+<footer>MIT licensed · <a href="https://github.com/nbkdevs/kitchen-remodeling-bellevue" target="_blank">source</a></footer>
+<script src="planner.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

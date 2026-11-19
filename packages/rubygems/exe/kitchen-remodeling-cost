@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "json"
+require "optparse"
+require_relative "../lib/kitchen_remodeling_cost"
+
+K = KitchenRemodelingCost
+o = { tax_rate: K::DEFAULT_TAX_RATE, contingency_rate: K::DEFAULT_CONTINGENCY_RATE }
+permit = nil
+shares = {}
+json = false
+parser = OptionParser.new do |op|
+  op.banner = "Usage: kitchen-remodeling-cost split|estimate <amount> | preset <name> | presets [options]"
+  op.on("--tax PERCENT", Float, "sales tax percent (default 10.3)") { |v| o[:tax_rate] = v / 100 }
+  op.on("--contingency PERCENT", Float, "reserve percent (default 10)") { |v| o[:contingency_rate] = v / 100 }
+  op.on("--permit DOLLARS", Float, "permit allowance") { |v| permit = v }
+  op.on("--share KEY=PERCENT", "override a line item share") { |v| k, p = v.split("=", 2); shares[k] = Float(p) }
+  op.on("--json", "JSON output") { json = true }
+end
+begin
+  cmd, val = parser.parse(ARGV)
+  o[:shares] = shares unless shares.empty?
+  r = case cmd
+      when "presets"
+        K::PRESETS.each do |n, p|
+          puts format("%-15s %-26s %s  permit %s", n, p[:label], K.money(p[:construction]), K.money(p[:permit]))
+        end
+        puts "Source: #{K::PRESET_SOURCE}"
+        exit 0
+      when "split" then K.split_budget(Float(val), **o, permit: permit || 0)
+      when "estimate" then K.estimate(Float(val), **o, permit: permit || 0)
+      when "preset" then K.estimate_preset(val, **o, permit: permit)
+      else
+        puts parser
+        exit 0
+      end
+  puts json ? JSON.pretty_generate(r) : K.format_table(r)
+rescue ArgumentError, TypeError, OptionParser::ParseError => e
+  warn "error: #{e.message}"
+  exit 1
+end

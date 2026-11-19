@@ -1,0 +1,63 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+use BellevueKitchenPros\KitchenRemodelingCost\Planner;
+
+foreach ([__DIR__ . '/../../../vendor/autoload.php', __DIR__ . '/../../../../autoload.php', __DIR__ . '/../../../../../autoload.php'] as $f) {
+    if (is_file($f)) {
+        require $f;
+        break;
+    }
+}
+if (!class_exists(Planner::class)) {
+    require __DIR__ . '/../src/Planner.php';
+}
+
+$pos = [];
+$tax = Planner::DEFAULT_TAX_RATE;
+$cont = Planner::DEFAULT_CONTINGENCY_RATE;
+$permit = null;
+$shares = [];
+$json = false;
+$args = array_slice($argv, 1);
+try {
+    for ($i = 0; $i < count($args); $i++) {
+        $a = $args[$i];
+        $val = function () use (&$i, $args, $a) {
+            if (!isset($args[$i + 1])) {
+                throw new InvalidArgumentException("$a needs a value");
+            }
+            return $args[++$i];
+        };
+        switch ($a) {
+            case '--tax': $tax = (float) $val() / 100; break;
+            case '--contingency': $cont = (float) $val() / 100; break;
+            case '--permit': $permit = (float) $val(); break;
+            case '--share': [$k, $v] = explode('=', $val(), 2); $shares[$k] = (float) $v; break;
+            case '--json': $json = true; break;
+            default: $pos[] = $a;
+        }
+    }
+    $cmd = $pos[0] ?? '';
+    $v = $pos[1] ?? '';
+    switch ($cmd) {
+        case 'presets':
+            foreach (Planner::PRESETS as $n => $p) {
+                printf("%-15s %-26s %s  permit %s\n", $n, $p['label'], Planner::money($p['construction']), Planner::money($p['permit']));
+            }
+            echo 'Source: ' . Planner::PRESET_SOURCE . "\n";
+            exit(0);
+        case 'split': $r = Planner::splitBudget((float) $v, $tax, $cont, $permit ?? 0, $shares); break;
+        case 'estimate': $r = Planner::estimate((float) $v, $tax, $cont, $permit ?? 0, $shares); break;
+        case 'preset': $r = Planner::estimatePreset($v, $tax, $cont, $permit, $shares); break;
+        default:
+            echo "Usage: kitchen-remodeling-cost split|estimate <amount> | preset <name> | presets [--tax %] [--contingency %] [--permit \$] [--share key=%] [--json]\n";
+            exit(0);
+    }
+    echo ($json ? json_encode($r, JSON_PRETTY_PRINT) : Planner::formatTable($r)) . "\n";
+} catch (InvalidArgumentException $e) {
+    fwrite(STDERR, 'error: ' . $e->getMessage() . "\n");
+    exit(1);
+}

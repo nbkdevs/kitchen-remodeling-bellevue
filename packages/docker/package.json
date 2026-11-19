@@ -1,0 +1,10 @@
+{
+  "name": "kitchen-remodeling-cost-server",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Docker image: kitchen remodeling cost planner API and calculator page",
+  "homepage": "https://wakitchenremodelingbellevue.com/",
+  "license": "MIT",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "test": "node --test test/*.test.js" }
+}

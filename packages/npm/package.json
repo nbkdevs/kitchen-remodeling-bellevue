@@ -1,0 +1,17 @@
+{
+  "name": "kitchen-remodeling-cost",
+  "version": "1.0.0",
+  "description": "Kitchen remodeling cost planner: split a kitchen remodel budget by line item, add sales tax, a contingency reserve and permits. Cost vs Value presets. Library + CLI, zero dependencies.",
+  "keywords": ["kitchen-remodeling", "kitchen-remodel", "remodel-cost", "renovation", "budget", "calculator", "sales-tax", "home-improvement", "cli"],
+  "homepage": "https://wakitchenremodelingbellevue.com/",
+  "bugs": { "url": "https://github.com/nbkdevs/kitchen-remodeling-bellevue/issues" },
+  "repository": { "type": "git", "url": "git+https://github.com/nbkdevs/kitchen-remodeling-bellevue.git", "directory": "packages/npm" },
+  "license": "MIT",
+  "author": "Bellevue Kitchen Pros (https://wakitchenremodelingbellevue.com/)",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "bin": { "kitchen-remodeling-cost": "bin/cli.js" },
+  "files": ["lib/", "bin/", "README.md", "LICENSE"],
+  "scripts": { "test": "node --test test/*.test.js" },
+  "engines": { "node": ">=18" }
+}

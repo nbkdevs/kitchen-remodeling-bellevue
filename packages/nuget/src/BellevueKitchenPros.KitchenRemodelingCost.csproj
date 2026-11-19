@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <RootNamespace>BellevueKitchenPros.KitchenRemodelingCost</RootNamespace>
+    <PackageId>BellevueKitchenPros.KitchenRemodelingCost</PackageId>
+    <Title>Kitchen Remodeling Cost Planner</Title>
+    <Version>1.0.0</Version>
+    <Authors>Bellevue Kitchen Pros</Authors>
+    <Company>Bellevue Kitchen Pros</Company>
+    <Description>Kitchen remodeling cost planner: split a kitchen remodel budget by line item (cabinets, countertops, appliances, labor and more), add sales tax, a contingency reserve and a permit allowance. Cost vs Value presets. Integer-cent maths, no dependencies.</Description>
+    <PackageTags>kitchen;remodeling;kitchen-remodel;budget;renovation;cost;calculator;sales-tax</PackageTags>
+    <PackageProjectUrl>https://wakitchenremodelingbellevue.com/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/nbkdevs/kitchen-remodeling-bellevue</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="/" />
+    <None Include="../LICENSE" Pack="true" PackagePath="/" />
+  </ItemGroup>
+</Project>

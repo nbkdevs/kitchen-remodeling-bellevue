@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kitchen-remodeling-cost"
+version = "1.0.0"
+description = "Kitchen remodeling cost planner: split a kitchen remodel budget by line item, add sales tax, a contingency reserve and permits. Cost vs Value presets. Library + CLI, zero dependencies."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Bellevue Kitchen Pros" }]
+requires-python = ">=3.8"
+keywords = ["kitchen remodeling", "kitchen remodel cost", "remodel budget", "renovation", "calculator", "sales tax", "home improvement"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Intended Audience :: End Users/Desktop",
+  "Topic :: Office/Business :: Financial",
+]
+
+[project.urls]
+Homepage = "https://wakitchenremodelingbellevue.com/"
+Documentation = "https://wakitchenremodelingbellevue.com/"
+Source = "https://github.com/nbkdevs/kitchen-remodeling-bellevue"
+Issues = "https://github.com/nbkdevs/kitchen-remodeling-bellevue/issues"
+
+[project.scripts]
+kitchen-remodeling-cost = "kitchen_remodeling_cost.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
