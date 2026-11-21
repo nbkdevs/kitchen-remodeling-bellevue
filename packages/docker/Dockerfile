@@ -5,7 +5,7 @@ LABEL org.opencontainers.image.title="kitchen-remodeling-cost" \
       org.opencontainers.image.url="https://wakitchenremodelingbellevue.com/" \
       org.opencontainers.image.documentation="https://wakitchenremodelingbellevue.com/" \
       org.opencontainers.image.licenses="MIT" \
-      org.opencontainers.image.version="1.0.0" \
+      org.opencontainers.image.version="1.0.1" \
       org.opencontainers.image.vendor="Bellevue Kitchen Pros"
 WORKDIR /app
 # Build context: packages/ (the npm library is copied in, not downloaded)

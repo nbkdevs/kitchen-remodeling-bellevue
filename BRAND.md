@@ -9,7 +9,7 @@
 | Privacy page | https://wakitchenremodelingbellevue.com/privacy/ |
 | Author / publisher | Bellevue Kitchen Pros |
 | License | MIT |
-| Version | 1.0.0 |
+| Version | 1.0.1 (libraries and Docker image; app, extensions and theme remain 1.0.0) |
 | Asset concept | Kitchen Remodeling Cost Planner: line-item budget split, sales tax, contingency reserve, permit allowance, Cost vs Value presets |
 
 ## Names per platform

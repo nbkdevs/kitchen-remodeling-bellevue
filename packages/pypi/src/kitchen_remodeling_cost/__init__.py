@@ -7,7 +7,7 @@ from .core import (DEFAULT_CONTINGENCY_RATE, DEFAULT_TAX_RATE, LINE_ITEMS, PRESE
                    SHARE_SOURCE, estimate, estimate_preset, format_table, money, normalise_shares,
                    split_budget)
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __all__ = ["LINE_ITEMS", "PRESETS", "DEFAULT_TAX_RATE", "DEFAULT_CONTINGENCY_RATE", "PRESET_SOURCE",
            "SHARE_SOURCE", "estimate", "split_budget", "estimate_preset", "normalise_shares",
            "format_table", "money"]

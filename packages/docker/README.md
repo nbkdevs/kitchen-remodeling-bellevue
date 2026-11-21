@@ -29,7 +29,7 @@ countertops 10% and so on). The 10.3% default is the Bellevue, WA combined sales
 December 2026; Washington taxes the full contract price, labor included.
 
 Image: `node:22-alpine`, runs as the unprivileged `node` user on port 8080, makes no outbound requests.
-Tags: `1.0.0`, `latest` (linux/amd64, linux/arm64).
+Tags: `1.0.1`, `latest` (linux/amd64, linux/arm64).
 
 ## Links
 

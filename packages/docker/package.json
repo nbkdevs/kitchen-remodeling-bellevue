@@ -1,7 +1,7 @@
 {
   "name": "kitchen-remodeling-cost-server",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Docker image: kitchen remodeling cost planner API and calculator page",
   "homepage": "https://wakitchenremodelingbellevue.com/",
   "license": "MIT",
