@@ -42,6 +42,7 @@ Total                              $60,000.00
 | `skills/kitchen-remodeling-budget` | ClawHub agent skill (instruction-only) |
 | `extensions/` | "Cabinet & Countertop Measure" for Firefox and Edge: countertop area with cutouts, backsplash tile count, cabinet run planner. Zero permissions, offline. |
 | `themes/` | "Walnut Morning" Chrome theme |
+| `packages/vscode` | "Kitchen Remodeling Cost Planner" VS Code extension: planner panel and a command that inserts the breakdown as a Markdown table |
 | `packages/SPEC.md` | The shared arithmetic every package implements (tests pin the same reference values) |
 
 ## Where the numbers come from
@@ -71,6 +72,12 @@ Published copies of this project:
 - Hugging Face Space: https://huggingface.co/spaces/iamnazzal/kitchen-remodeling-cost-planner
 - ClawHub skill: https://clawhub.ai/nbkdevs/kitchen-remodeling-budget
 - Package indexes: https://socket.dev/npm/package/kitchen-remodeling-cost, https://libraries.io/npm/kitchen-remodeling-cost, https://pypistats.org/packages/kitchen-remodeling-cost, https://npm.io/package/kitchen-remodeling-cost
+- Packagist: https://packagist.org/packages/bellevuekitchenpros/kitchen-remodeling-cost
+- GitLab mirror: https://gitlab.com/nbkdevs/kitchen-remodeling-bellevue
+- Amazon Appstore (Android app): https://www.amazon.com/dp/B0HS7KX643 (also on amazon.co.uk, .de, .fr, .it, .es, .co.jp, .ca, .com.br, .com.mx and .com.au under the same ASIN)
+- Microsoft Edge Add-ons (Cabinet & Countertop Measure): https://microsoftedge.microsoft.com/addons/detail/cdjemmdfkndnbojdgbhahjdeajkkjafd
+- Chrome Web Store (Walnut Morning theme): https://chromewebstore.google.com/detail/nifcpapdpboinfodebbnijhidoepbkfm
+- Product Hunt: https://www.producthunt.com/products/kitchen-remodeling-cost-planner
 
 ## License
 

@@ -1,38 +1,60 @@
 # Status: Kitchen Remodeling Cost Planner (wakitchenremodelingbellevue.com)
 
-Updated 19 Nov 2026, 12:40 PKT (Asia/Karachi).
+Updated 21 Nov 2026, 11:50 PKT (Asia/Karachi). Synced with the tracking sheet on the same date.
 
-- Tracking sheet: [Softrank - wakitchenremodelingbellevue.com](https://docs.google.com/spreadsheets/d/1Bw-kHs6TlWsYD6olKefiEYgRX6KT5qdsG02TdGcGFRs/edit), tab Sheet1. It has one row per domain; the Amazon Appstore has one row per TLD.
+- Tracking sheet: [Softrank - wakitchenremodelingbellevue.com](https://docs.google.com/spreadsheets/d/1Bw-kHs6TlWsYD6olKefiEYgRX6KT5qdsG02TdGcGFRs/edit), tab Sheet1. One row per domain; the Amazon Appstore has one row per TLD.
 - Anchor: "Kitchen Remodeling Bellevue" → https://wakitchenremodelingbellevue.com/. Privacy page: https://wakitchenremodelingbellevue.com/privacy/.
-- Skipped on Nazzal's instruction: Google Play, AppBrain, Great Apps and Popular Apps.
-- Rel values were checked on the live pages on 19 Nov 2026.
+- Skipped on Nazzal's instruction: Google Play, AppBrain, Great Apps, Popular Apps and nav-ai.net.
+- 31 of 37 sheet rows are Live.
 
-| Sheet row | Platform | Item | URL | Rel (checked) | Status | Date (PKT) |
+| Sheet row | Platform | Item type | Link | DA/DR | URL | Status |
 |---|---|---|---|---|---|---|
-| 2 | GitHub | Monorepo + release v1.0.0 | https://github.com/nbkdevs/kitchen-remodeling-bellevue | nofollow | Live | 19 Nov 2026 |
-| 3 | npm | `kitchen-remodeling-cost` 1.0.0 | https://www.npmjs.com/package/kitchen-remodeling-cost | nofollow | Live | 19 Nov 2026 |
-| 4 | PyPI | `kitchen-remodeling-cost` 1.0.0 | https://pypi.org/project/kitchen-remodeling-cost/ | nofollow | Live | 19 Nov 2026 |
-| 5 | crates.io | `kitchen-remodeling-cost` 1.0.0 | https://crates.io/crates/kitchen-remodeling-cost | dofollow (homepage link has no rel) | Live | 19 Nov 2026 |
-| 6 | docs.rs | crate docs | https://docs.rs/kitchen-remodeling-cost/latest/kitchen_remodeling_cost/index.html | dofollow | Live | 19 Nov 2026 |
-| 7 | pub.dev | `kitchen_remodeling_cost` 1.0.0 | https://pub.dev/packages/kitchen_remodeling_cost | ugc (nofollow) | Live | 19 Nov 2026 |
-| 8 | NuGet | `BellevueKitchenPros.KitchenRemodelingCost` 1.0.0 | https://www.nuget.org/packages/BellevueKitchenPros.KitchenRemodelingCost/ | nofollow | Live | 19 Nov 2026 |
-| 9 | RubyGems | `kitchen-remodeling-cost` 1.0.0 | https://rubygems.org/gems/kitchen-remodeling-cost | nofollow | Live | 19 Nov 2026 |
-| 10 | Docker Hub | `iamnazzal/kitchen-remodeling-cost:1.0.0` (amd64 + arm64) | https://hub.docker.com/r/iamnazzal/kitchen-remodeling-cost | nofollow noopener (overview) | Live | 19 Nov 2026 |
-| 11 | Hugging Face | Space "Kitchen Remodeling Budget Calculator" | https://huggingface.co/spaces/iamnazzal/kitchen-remodeling-cost-planner | dofollow (in-app link, no rel) | Live (RUNNING) | 19 Nov 2026 |
-| 12 | ClawHub | skill `kitchen-remodeling-budget` 1.0.0 | https://clawhub.ai/nbkdevs/kitchen-remodeling-budget | check when public | Pending review (moderation CLEAN, pending.publication) | 19 Nov 2026 |
-| 13 | Socket | auto-index of npm | https://socket.dev/npm/package/kitchen-remodeling-cost | nofollow | Pending (auto-index) | |
-| 14 | Libraries.io | auto-index | https://libraries.io/npm/kitchen-remodeling-cost | nofollow | Pending (auto-index) | |
-| 15 | PyPI Stats | auto-index | https://pypistats.org/packages/kitchen-remodeling-cost | dofollow | Pending (page up, link appears after first stats) | |
-| 16 | npm.io | auto-index | https://npm.io/package/kitchen-remodeling-cost | dofollow | Pending (auto-index) | |
-| 17 | Packagist | `bellevuekitchenpros/kitchen-remodeling-cost` | (submit) https://packagist.org/packages/submit | nofollow | Not submitted: no Packagist API token on the box; see [packages/packagist/SUBMIT.md](packages/packagist/SUBMIT.md) | |
-| 18 | GitLab | mirror | — | nofollow | Not submitted: no GitLab token | |
-| 19 | Context7 | repo docs (`context7.json`, `packages/context7/llms.txt`) | https://context7.com/add-library | dofollow | Not submitted: the API needs a Context7 key (401) | |
-| 20–30 | Amazon Appstore ×11 (.com, .co.uk, .de, .it, .fr, .es, .co.jp, .ca, .com.br, .com.mx, .com.au) | Kitchen Remodeling Cost Planner | URL after ASIN | dofollow | Kit ready: [app/AMAZON_APPSTORE_LISTING.md](app/AMAZON_APPSTORE_LISTING.md) | |
-| 31 | Chrome Web Store | theme Walnut Morning | — | nofollow | Kit ready: [extensions/STORE_LISTINGS.md](extensions/STORE_LISTINGS.md) | |
-| 32 | Firefox AMO | extension Cabinet & Countertop Measure | — | nofollow | Kit ready (same file) | |
-| 33 | Edge Add-ons | extension Cabinet & Countertop Measure | — | dofollow | Kit ready + [extensions/edge/NOTES_FOR_CERTIFICATION.md](extensions/edge/NOTES_FOR_CERTIFICATION.md) | |
-| 34 | Design Nominees | site listing | — | dofollow | Kit ready: [packages/designnominees/LISTING.md](packages/designnominees/LISTING.md) | |
-| 35 | Product Hunt | product launch | — | nofollow | Kit ready: [packages/producthunt/LISTING.md](packages/producthunt/LISTING.md) | |
+| 2 | Github | Source Code | Nofollow | 96/97 | https://github.com/nbkdevs/kitchen-remodeling-bellevue | Live |
+| 3 | NPM Packages | NPM Package | Nofollow | 86/92 | https://www.npmjs.com/package/kitchen-remodeling-cost | Live |
+| 4 | PyPi | Python Package | Nofollow | 83/91 | https://pypi.org/project/kitchen-remodeling-cost/ | Live |
+| 5 | Crates io | Rust package | Dofollow | 56/87 | https://crates.io/crates/kitchen-remodeling-cost | Live |
+| 6 | Docs rs | Rust package | Dofollow | 57/87 | https://docs.rs/kitchen-remodeling-cost/latest/kitchen_remodeling_cost/index.html | Live |
+| 7 | Pub dev | Dart Package | Nofollow | 55/86 | https://pub.dev/packages/kitchen_remodeling_cost | Live |
+| 8 | NuGet | C Package | Nofollow | 71/89 | https://www.nuget.org/packages/BellevueKitchenPros.KitchenRemodelingCost/ | Live |
+| 9 | RubyGems | Ruby Package | Nofollow | 74/87 | https://rubygems.org/gems/kitchen-remodeling-cost | Live |
+| 10 | Docker Hub | Docker Image | Nofollow | 90/92 | https://hub.docker.com/r/iamnazzal/kitchen-remodeling-cost | Live |
+| 11 | HuggingFace Space | Static Space | Dofollow | 85/91 | https://huggingface.co/spaces/iamnazzal/kitchen-remodeling-cost-planner | Live |
+| 12 | ClawHub | Agent Skill | Dofollow | 35/83 | https://clawhub.ai/nbkdevs/kitchen-remodeling-budget | Live |
+| 13 | Socket Dev | NPM Package | Nofollow | 52/78 | https://socket.dev/npm/package/kitchen-remodeling-cost | Live |
+| 14 | Libraries io | NPM Package | Nofollow | 52/75 | https://libraries.io/npm/kitchen-remodeling-cost | Live |
+| 15 | PyPI Stats | Python Package | Dofollow | 41/74 | https://pypistats.org/packages/kitchen-remodeling-cost | Live |
+| 16 | NPM io | NPM Package | Dofollow | 30/47 | https://npm.io/package/kitchen-remodeling-cost | Live |
+| 17 | Packagist | Php Package | Nofollow | 78/88 | https://packagist.org/packages/bellevuekitchenpros/kitchen-remodeling-cost | Live |
+| 18 | Gitlab | Source Code | Nofollow | 92/92 | https://gitlab.com/nbkdevs/kitchen-remodeling-bellevue | Live |
+| 19 | Context 7 | Agent Skill | Dofollow | 37/75 | – | Not submitted - site has no llms.txt (404) |
+| 20 | Amazon Appstore | Android App | Dofollow | 95/96 | https://www.amazon.com/dp/B0HS7KX643 | Live |
+| 21 | Amazon Appstore | Android App | Dofollow | 94/93 | https://www.amazon.co.uk/dp/B0HS7KX643 | Live |
+| 22 | Amazon Appstore | Android App | Dofollow | 95/96 | https://www.amazon.de/dp/B0HS7KX643 | Live |
+| 23 | Amazon Appstore | Android App | Dofollow | 93/91 | https://www.amazon.it/dp/B0HS7KX643 | Live |
+| 24 | Amazon Appstore | Android App | Dofollow | 95/96 | https://www.amazon.fr/dp/B0HS7KX643 | Live |
+| 25 | Amazon Appstore | Android App | Dofollow | 95/96 | https://www.amazon.es/dp/B0HS7KX643 | Live |
+| 26 | Amazon Appstore | Android App | Dofollow | 95/96 | https://www.amazon.co.jp/dp/B0HS7KX643 | Live |
+| 27 | Amazon Appstore | Android App | Dofollow | 95/96 | https://www.amazon.ca/dp/B0HS7KX643 | Live |
+| 28 | Amazon Appstore | Android App | Dofollow | 95/96 | https://www.amazon.com.br/dp/B0HS7KX643 | Live |
+| 29 | Amazon Appstore | Android App | Dofollow | 95/96 | https://www.amazon.com.mx/dp/B0HS7KX643 | Live |
+| 30 | Amazon Appstore | Android App | Dofollow | 95/96 | https://www.amazon.com.au/dp/B0HS7KX643 | Live |
+| 31 | Chrome Webstore | Chrome Theme | Nofollow | 90/99 | https://chromewebstore.google.com/detail/nifcpapdpboinfodebbnijhidoepbkfm | Live |
+| 32 | Mozilla Addons | Extension | Nofollow | 97/96 | https://addons.mozilla.org/en-US/firefox/addon/cabinet-countertop-measure/ | Pending Review |
+| 33 | Edge Addons | Extension | Dofollow | 98/96 | https://microsoftedge.microsoft.com/addons/detail/cdjemmdfkndnbojdgbhahjdeajkkjafd | Live |
+| 34 | Design Nominees | Website | Dofollow | 50/73 | – | Not submitted - free submissions closed (paid only) |
+| 35 | Product Hunt | SaaS/Website | Nofollow | 95/91 | https://www.producthunt.com/products/kitchen-remodeling-cost-planner | Live |
+| 36 | Launching Next | SaaS/Website | – | – | https://www.launchingnext.com/ (queue id 184803) | Pending Review |
+| 37 | PitchWall | SaaS/Website | – | – | https://pitchwall.co/product/kitchen-remodeling-cost-planner | Pending Review |
+| 38 | Uneed | SaaS/Website | – | – | https://www.uneed.best/tool/kitchen-remodeling-cost-planner | Pending (launch Jul 15, 2027) |
+
+## Built, not published yet (added 21 Nov 2026)
+
+| Platform | Asset | Where | Blocker |
+|---|---|---|---|
+| VS Code Marketplace | `nbkdevs.kitchen-remodeling-cost-planner` "Kitchen Remodeling Cost Planner" | [packages/vscode](packages/vscode) (`kitchen-remodeling-cost-planner-1.0.0.vsix`) | needs a Marketplace publisher + `VSCE_PAT` |
+| Open VSX | same .vsix | [packages/vscode/PUBLISHING.md](packages/vscode/PUBLISHING.md) | needs an open-vsx.org account + `OVSX_PAT` |
+| SourceForge | "Kitchen Remodeling Cost Planner" | [listings/SOURCEFORGE.md](listings/SOURCEFORGE.md), files in [listings/sourceforge](listings/sourceforge) | needs a SourceForge account/login |
+| Codeberg / Bitbucket | repo mirrors | [listings/MIRRORS.md](listings/MIRRORS.md) | needs `CODEBERG_TOKEN` / Bitbucket app password |
 
 ## Build artifacts (git-ignored, attached to the GitHub release v1.0.0)
 
@@ -44,6 +66,8 @@ Updated 19 Nov 2026, 12:40 PKT (Asia/Karachi).
 
 ## Follow-ups
 
-- NuGet API key expires in 7 days; make a new one before the next NuGet push.
-- ClawHub: confirm the skill is public, then set row 12 to Live.
-- Recheck rows 13–16 in a few days.
+- Firefox AMO (row 32): still in Mozilla's review queue; mark Live when approved.
+- Launching Next, PitchWall, Uneed (rows 36–38): recheck; Uneed launch date is Jul 15, 2027.
+- Context7 (row 19): needs an llms.txt on the site, or submit the GitHub repo instead.
+- Design Nominees (row 34): free submissions closed; paid only, skipped unless Nazzal approves.
+- NuGet API key expires soon; make a new one before the next NuGet push.
