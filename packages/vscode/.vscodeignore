@@ -1,0 +1,7 @@
+test/**
+scripts/**
+images/screenshot-harness.html
+*.vsix
+.gitignore
+node_modules/**
+PUBLISHING.md

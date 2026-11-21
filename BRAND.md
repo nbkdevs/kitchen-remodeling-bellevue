@@ -29,5 +29,7 @@
 | Android app (Amazon Appstore) | "Kitchen Remodeling Cost Planner", `com.nbkdevs.kitchenremodelingcost` |
 | Firefox / Edge extension | "Cabinet & Countertop Measure" (no keyword, brand or site in name, description or code), gecko id `cabinet-countertop-measure@nbkdevs` |
 | Chrome Web Store theme | "Walnut Morning" (not brand-named) |
+| VS Code Marketplace / Open VSX | `nbkdevs.kitchen-remodeling-cost-planner` ("Kitchen Remodeling Cost Planner", packages/vscode) |
+| SourceForge | "Kitchen Remodeling Cost Planner" (listings/SOURCEFORGE.md) |
 
 All names were free on 19 Nov 2026 (registry APIs returned 404).

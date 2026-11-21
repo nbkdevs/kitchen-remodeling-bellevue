@@ -1,0 +1,47 @@
+{
+  "name": "kitchen-remodeling-cost-planner",
+  "displayName": "Kitchen Remodeling Cost Planner",
+  "description": "Kitchen remodeling budget planner for VS Code: split a remodel budget into 12 line items with sales tax, contingency and permits, and insert the breakdown as a Markdown table. Offline, no telemetry.",
+  "version": "1.0.0",
+  "publisher": "nbkdevs",
+  "author": { "name": "Bellevue Kitchen Pros", "url": "https://wakitchenremodelingbellevue.com/" },
+  "license": "MIT",
+  "icon": "icon.png",
+  "homepage": "https://wakitchenremodelingbellevue.com/",
+  "bugs": { "url": "https://wakitchenremodelingbellevue.com/" },
+  "repository": { "type": "git", "url": "https://github.com/nbkdevs/kitchen-remodeling-bellevue.git", "directory": "packages/vscode" },
+  "galleryBanner": { "color": "#5e3b22", "theme": "dark" },
+  "engines": { "vscode": "^1.74.0" },
+  "categories": ["Other"],
+  "keywords": ["kitchen remodeling", "remodel cost", "renovation budget", "home improvement", "cost estimate", "sales tax", "markdown table", "budget planner"],
+  "main": "./extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "commands": [
+      { "command": "kitchenRemodelingCostPlanner.openPlanner", "title": "Open Cost Planner", "category": "Kitchen Remodeling" },
+      { "command": "kitchenRemodelingCostPlanner.insertBreakdown", "title": "Insert Cost Breakdown (Markdown Table)", "category": "Kitchen Remodeling" }
+    ],
+    "menus": {
+      "editor/context": [
+        { "command": "kitchenRemodelingCostPlanner.insertBreakdown", "when": "editorLangId == markdown", "group": "z_commands" }
+      ]
+    },
+    "configuration": {
+      "title": "Kitchen Remodeling Cost Planner",
+      "properties": {
+        "kitchenRemodelingCostPlanner.taxRate": { "type": "number", "default": 10.3, "minimum": 0, "maximum": 100, "description": "Sales tax in percent applied to construction plus contingency (10.3 is the Bellevue, WA combined rate)." },
+        "kitchenRemodelingCostPlanner.contingencyRate": { "type": "number", "default": 10, "minimum": 0, "maximum": 100, "description": "Contingency reserve in percent of the construction cost." },
+        "kitchenRemodelingCostPlanner.defaultPermit": { "type": "number", "default": 1500, "minimum": 0, "description": "Default permit allowance in dollars offered by the insert command." }
+      }
+    }
+  },
+  "scripts": {
+    "sync-core": "node scripts/sync-core.js",
+    "compile": "node --check extension.js && node --check lib/report.js && node --check lib/panel.js && node --check lib/core.js && node --check media/panel.js && node --check media/core.js",
+    "test": "node --test test/*.test.js",
+    "screenshot": "SIZE=1280,800 node scripts/screenshot.js",
+    "vscode:prepublish": "npm run compile && npm test",
+    "package": "npx --yes @vscode/vsce package --no-dependencies"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,30 @@
+:root{--accent:var(--vscode-button-background,#2f6b5a);--line:var(--vscode-panel-border,#3c3c3c);--muted:var(--vscode-descriptionForeground,#9d9d9d)}
+*{box-sizing:border-box}
+button{font:inherit}
+body{margin:0;padding:0 16px 24px;font-family:var(--vscode-font-family,system-ui,sans-serif);font-size:var(--vscode-font-size,13px);color:var(--vscode-foreground,#ccc);background:var(--vscode-editor-background,#1e1e1e)}
+header{padding:18px 0 6px;border-bottom:3px solid #8a5a36;margin-bottom:14px}
+header h1{margin:0 0 4px;font-size:1.5em}
+header p{margin:0;color:var(--muted)}
+main{display:grid;gap:14px;align-items:start;grid-template-columns:minmax(260px,1fr) minmax(320px,1.3fr)}
+@media (max-width:720px){main{grid-template-columns:1fr}}
+.card{border:1px solid var(--line);border-radius:8px;padding:14px;background:var(--vscode-sideBar-background,transparent)}
+.tabs{display:flex;gap:6px;margin-bottom:6px}
+.tabs button{flex:1;padding:6px;border:1px solid var(--line);background:transparent;color:inherit;border-radius:6px;cursor:pointer;font-weight:600}
+.tabs button[aria-selected=true]{background:var(--accent);color:var(--vscode-button-foreground,#fff);border-color:var(--accent)}
+label{display:block;color:var(--muted);margin:8px 0}
+input{display:block;width:100%;margin-top:4px;padding:5px 7px;border:1px solid var(--vscode-input-border,var(--line));border-radius:4px;background:var(--vscode-input-background,#3c3c3c);color:var(--vscode-input-foreground,#ccc);font:inherit}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.hint{color:var(--muted);margin:8px 0 4px}
+.presets{display:flex;flex-wrap:wrap;gap:6px}
+.presets button{border:1px solid #8a5a36;background:transparent;color:inherit;border-radius:999px;padding:3px 10px;cursor:pointer}
+.err{color:var(--vscode-errorForeground,#f48771);min-height:1.2em}
+.total{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid #8a5a36;padding-bottom:6px;margin-bottom:6px}
+.total strong{font-size:1.8em}
+table{width:100%;border-collapse:collapse}
+th,td{padding:4px;border-bottom:1px solid var(--line);text-align:left}
+th:nth-child(n+2),td:nth-child(n+2){text-align:right;font-variant-numeric:tabular-nums}
+tfoot td{font-weight:600}
+.bar{height:3px;background:#8a5a36;border-radius:2px;margin-top:2px}
+.actions{display:flex;gap:8px;margin-top:12px}
+.actions button{padding:6px 12px;border:0;border-radius:4px;cursor:pointer;background:var(--accent);color:var(--vscode-button-foreground,#fff)}
+.actions button.secondary{background:var(--vscode-button-secondaryBackground,#3a3d41);color:var(--vscode-button-secondaryForeground,#fff)}
