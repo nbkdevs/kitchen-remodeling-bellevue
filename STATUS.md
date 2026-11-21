@@ -1,9 +1,9 @@
 # Status: Kitchen Remodeling Cost Planner (wakitchenremodelingbellevue.com)
 
-Updated 21 Nov 2026, 11:50 PKT (Asia/Karachi). Synced with the tracking sheet on the same date.
+Updated 21 Nov 2026, 13:18 PKT (Asia/Karachi). Synced with the tracking sheet on the same date.
 
 - Tracking sheet: [Softrank - wakitchenremodelingbellevue.com](https://docs.google.com/spreadsheets/d/1Bw-kHs6TlWsYD6olKefiEYgRX6KT5qdsG02TdGcGFRs/edit), tab Sheet1. One row per domain; the Amazon Appstore has one row per TLD.
-- Anchor: "Kitchen Remodeling Bellevue" → https://wakitchenremodelingbellevue.com/. Privacy page: https://wakitchenremodelingbellevue.com/privacy/.
+- Anchors: "Kitchen Remodeling Bellevue" stays the most common, mixed with variations (kitchen remodel, Bellevue kitchen remodelers, kitchen renovation in Bellevue), the brand "Bellevue Kitchen Pros", and the naked URL. At most one or two site links per page. Homepage / support / website fields: https://wakitchenremodelingbellevue.com/. Privacy page: https://wakitchenremodelingbellevue.com/privacy/.
 - Skipped on Nazzal's instruction: Google Play, AppBrain, Great Apps, Popular Apps and nav-ai.net.
 - 31 of 37 sheet rows are Live.
 

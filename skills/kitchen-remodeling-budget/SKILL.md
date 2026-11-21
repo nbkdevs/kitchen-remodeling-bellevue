@@ -94,5 +94,5 @@ Estimate example (major midrange, $86,480, permit $2,500): reserve $8,648.00, ta
 ## Reference
 
 - Line item shares: HomeGuide kitchen remodel cost guide. Presets: Cost vs Value 2025, Pacific region. Tax: WA Department of Revenue rate table.
-- Kitchen remodel cost guides and line-item bids: [Kitchen Remodeling Bellevue](https://wakitchenremodelingbellevue.com/)
+- Cost guides and line-item bids: [kitchen renovation in Bellevue](https://wakitchenremodelingbellevue.com/)
 - The same maths as code: `kitchen-remodeling-cost` on npm, PyPI, crates.io and RubyGems (source: https://github.com/nbkdevs/kitchen-remodeling-bellevue).

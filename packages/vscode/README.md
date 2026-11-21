@@ -74,8 +74,7 @@ npm run package      # build the .vsix with @vscode/vsce
 
 ## Links
 
-Built by the team behind [Kitchen Remodeling Bellevue](https://wakitchenremodelingbellevue.com/), a
-design-build kitchen remodeling contractor in Bellevue, WA that lists sales tax and permit fees as
+Built by [Bellevue kitchen remodelers](https://wakitchenremodelingbellevue.com/) who list sales tax and permit fees as
 their own lines on every bid.
 
 - Source: <https://github.com/nbkdevs/kitchen-remodeling-bellevue/tree/main/packages/vscode>

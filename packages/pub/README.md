@@ -89,7 +89,7 @@ Total                              $60,000.00
 
 ## Links
 
-- Kitchen remodel cost guides and line-item bids: [Kitchen Remodeling Bellevue](https://wakitchenremodelingbellevue.com/)
+- Cost guides and written bids from [Bellevue Kitchen Pros](https://wakitchenremodelingbellevue.com/).
 - Source and issues: https://github.com/nbkdevs/kitchen-remodeling-bellevue
 
 ## License

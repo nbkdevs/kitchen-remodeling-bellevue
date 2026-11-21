@@ -33,7 +33,7 @@ Tags: `1.0.0`, `latest` (linux/amd64, linux/arm64).
 
 ## Links
 
-- Kitchen remodel cost guides and line-item bids: [Kitchen Remodeling Bellevue](https://wakitchenremodelingbellevue.com/)
+- Cost guides and line-item bids for a [kitchen renovation in Bellevue](https://wakitchenremodelingbellevue.com/).
 - Source: https://github.com/nbkdevs/kitchen-remodeling-bellevue (`packages/docker`; the maths is the `kitchen-remodeling-cost` npm library)
 
 ## License
