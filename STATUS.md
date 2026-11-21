@@ -1,11 +1,11 @@
 # Status: Kitchen Remodeling Cost Planner (wakitchenremodelingbellevue.com)
 
-Updated 21 Nov 2026, 13:18 PKT (Asia/Karachi). Synced with the tracking sheet on the same date.
+Updated 21 Nov 2026, 14:03 PKT (Asia/Karachi). Library and Docker listings republished at 1.0.1 (pub.dev 1.0.2) with dofollow/nofollow anchor rules.
 
 - Tracking sheet: [Softrank - wakitchenremodelingbellevue.com](https://docs.google.com/spreadsheets/d/1Bw-kHs6TlWsYD6olKefiEYgRX6KT5qdsG02TdGcGFRs/edit), tab Sheet1. One row per domain; the Amazon Appstore has one row per TLD.
-- Anchors: "Kitchen Remodeling Bellevue" stays the most common, mixed with variations (kitchen remodel, Bellevue kitchen remodelers, kitchen renovation in Bellevue), the brand "Bellevue Kitchen Pros", and the naked URL. At most one or two site links per page. Homepage / support / website fields: https://wakitchenremodelingbellevue.com/. Privacy page: https://wakitchenremodelingbellevue.com/privacy/.
+- Anchors: at most one or two site links per page. Dofollow pages (GitHub README, Codeberg, Bitbucket, Hugging Face, pub.dev, Docker Hub, crates.io/docs.rs, ClawHub) use the main keyword "Kitchen Remodeling Bellevue" or "kitchen remodeling". Nofollow pages (PyPI, npm, RubyGems, NuGet, the Packagist package README) use a variation, the brand "Bellevue Kitchen Pros", or the naked URL. Homepage / support / website fields: https://wakitchenremodelingbellevue.com/. Privacy page: https://wakitchenremodelingbellevue.com/privacy/.
 - Skipped on Nazzal's instruction: Google Play, AppBrain, Great Apps, Popular Apps and nav-ai.net.
-- 31 of 37 sheet rows are Live.
+- 34 of 42 sheet rows are Live. Git tag `v1.0.2` is on GitHub (Packagist).
 
 | Sheet row | Platform | Item type | Link | DA/DR | URL | Status |
 |---|---|---|---|---|---|---|
@@ -41,20 +41,23 @@ Updated 21 Nov 2026, 13:18 PKT (Asia/Karachi). Synced with the tracking sheet on
 | 31 | Chrome Webstore | Chrome Theme | Nofollow | 90/99 | https://chromewebstore.google.com/detail/nifcpapdpboinfodebbnijhidoepbkfm | Live |
 | 32 | Mozilla Addons | Extension | Nofollow | 97/96 | https://addons.mozilla.org/en-US/firefox/addon/cabinet-countertop-measure/ | Pending Review |
 | 33 | Edge Addons | Extension | Dofollow | 98/96 | https://microsoftedge.microsoft.com/addons/detail/cdjemmdfkndnbojdgbhahjdeajkkjafd | Live |
-| 34 | Design Nominees | Website | Dofollow | 50/73 | – | Not submitted - free submissions closed (paid only) |
+| 34 | Design Nominees | Website | Dofollow | 50/73 | https://www.designnominees.com/apps/kitchen-remodeling-cost-planner | Pending Review |
 | 35 | Product Hunt | SaaS/Website | Nofollow | 95/91 | https://www.producthunt.com/products/kitchen-remodeling-cost-planner | Live |
 | 36 | Launching Next | SaaS/Website | – | – | https://www.launchingnext.com/ (queue id 184803) | Pending Review |
 | 37 | PitchWall | SaaS/Website | – | – | https://pitchwall.co/product/kitchen-remodeling-cost-planner | Pending Review |
 | 38 | Uneed | SaaS/Website | – | – | https://www.uneed.best/tool/kitchen-remodeling-cost-planner | Pending (launch Jul 15, 2027) |
+| 39 | Bitbucket | Source Code | – | – | https://bitbucket.org/nbkdevs/kitchen-remodeling-bellevue | Live |
+| 40 | Codeberg | Source Code | – | – | https://codeberg.org/nbkdevs/kitchen-remodeling-bellevue | Live |
+| 41 | VS Code Marketplace | Editor Extension | – | – | https://marketplace.visualstudio.com/items?itemName=nbkdevs.kitchen-remodeling-cost-planner | Pending (Microsoft verification; needs a re-publish once `VSCE_PAT` is available so the README anchor is current) |
+| 42 | Indie Hackers | SaaS/Website | – | – | https://www.indiehackers.com/product/bellevue-kitchen-pros | Live |
+| 43 | TinyLaunch | SaaS/Website | – | – | – | Pending |
 
-## Built, not published yet (added 21 Nov 2026)
+## Built, not published yet
 
 | Platform | Asset | Where | Blocker |
 |---|---|---|---|
-| VS Code Marketplace | `nbkdevs.kitchen-remodeling-cost-planner` "Kitchen Remodeling Cost Planner" | [packages/vscode](packages/vscode) (`kitchen-remodeling-cost-planner-1.0.0.vsix`) | needs a Marketplace publisher + `VSCE_PAT` |
-| Open VSX | same .vsix | [packages/vscode/PUBLISHING.md](packages/vscode/PUBLISHING.md) | needs an open-vsx.org account + `OVSX_PAT` |
+| Open VSX | same .vsix as the Marketplace listing | [packages/vscode/PUBLISHING.md](packages/vscode/PUBLISHING.md) | needs an open-vsx.org account + `OVSX_PAT` |
 | SourceForge | "Kitchen Remodeling Cost Planner" | [listings/SOURCEFORGE.md](listings/SOURCEFORGE.md), files in [listings/sourceforge](listings/sourceforge) | needs a SourceForge account/login |
-| Codeberg / Bitbucket | repo mirrors | [listings/MIRRORS.md](listings/MIRRORS.md) | needs `CODEBERG_TOKEN` / Bitbucket app password |
 
 ## Build artifacts (git-ignored, attached to the GitHub release v1.0.0)
 
@@ -67,7 +70,11 @@ Updated 21 Nov 2026, 13:18 PKT (Asia/Karachi). Synced with the tracking sheet on
 ## Follow-ups
 
 - Firefox AMO (row 32): still in Mozilla's review queue; mark Live when approved.
+- Design Nominees (row 34): free app submission is pending review; after approval, add the site URL in the Windows or Android field.
 - Launching Next, PitchWall, Uneed (rows 36–38): recheck; Uneed launch date is Jul 15, 2027.
 - Context7 (row 19): needs an llms.txt on the site, or submit the GitHub repo instead.
-- Design Nominees (row 34): free submissions closed; paid only, skipped unless Nazzal approves.
-- NuGet API key expires soon; make a new one before the next NuGet push.
+- TinyLaunch (row 43): still pending.
+- VS Code Marketplace (row 41) and Open VSX: need `VSCE_PAT` / `OVSX_PAT` to publish the updated README.
+- ClawHub skill body now uses the main-keyword anchor; the live skill is still 1.0.0 and needs a republish (no ClawHub token on the box).
+- Bitbucket and Codeberg are live but were one-time imports; re-sync them so they pick up the dofollow README anchors.
+- NuGet API key expires in 5 days (around 26 Nov 2026); regenerate before the next NuGet push.
