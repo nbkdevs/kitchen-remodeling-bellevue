@@ -54,7 +54,7 @@ Total                              $60,000.00
 
 ## Links
 
-- Kitchen remodel cost guides and line-item bids: [Bellevue Kitchen Pros](https://wakitchenremodelingbellevue.com/)
+- Kitchen remodel cost guides and line-item bids: [kitchen remodeling](https://wakitchenremodelingbellevue.com/)
 - Privacy: [PRIVACY.md](PRIVACY.md)
 
 ## Elsewhere

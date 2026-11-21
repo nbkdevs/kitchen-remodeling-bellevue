@@ -6,7 +6,7 @@
     <RootNamespace>BellevueKitchenPros.KitchenRemodelingCost</RootNamespace>
     <PackageId>BellevueKitchenPros.KitchenRemodelingCost</PackageId>
     <Title>Kitchen Remodeling Cost Planner</Title>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>Bellevue Kitchen Pros</Authors>
     <Company>Bellevue Kitchen Pros</Company>
     <Description>Kitchen remodeling cost planner: split a kitchen remodel budget by line item (cabinets, countertops, appliances, labor and more), add sales tax, a contingency reserve and a permit allowance. Cost vs Value presets. Integer-cent maths, no dependencies.</Description>

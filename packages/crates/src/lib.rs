@@ -9,7 +9,7 @@
 //! assert_eq!(r.total, 74298.0);
 //! ```
 //!
-//! More kitchen remodel planning: <https://wakitchenremodelingbellevue.com/>
+//! More kitchen remodel planning: [Kitchen Remodeling Bellevue](https://wakitchenremodelingbellevue.com/)
 
 use std::fmt;
 

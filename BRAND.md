@@ -4,7 +4,7 @@
 |---|---|
 | Target site | https://wakitchenremodelingbellevue.com/ (Bellevue Kitchen Pros, kitchen remodeling contractor, Bellevue WA) |
 | Tagline (repo description) | Expert kitchen remodeling in Bellevue, WA. One local team designs, handles permits and builds, with a clear written price before work starts. |
-| In-text anchors | Rotate. Keep "Kitchen Remodeling Bellevue" as the most common (about 40–50% of listings). Mix in natural variations (kitchen remodel, Bellevue kitchen remodelers, kitchen renovation in Bellevue), the brand "Bellevue Kitchen Pros", and the naked URL. At most one or two site links per page, sometimes just one. |
+| In-text anchors | At most one or two site links per page. On dofollow pages (GitHub README, Codeberg, Bitbucket, Hugging Face, pub.dev, Docker Hub, crates.io/docs.rs, ClawHub) use the main keyword: "Kitchen Remodeling Bellevue" or "kitchen remodeling". On nofollow pages (PyPI, npm, RubyGems, NuGet, Packagist package README) use a variation, the brand "Bellevue Kitchen Pros", or the naked URL. |
 | Homepage / support / website / url fields | https://wakitchenremodelingbellevue.com/ |
 | Privacy page | https://wakitchenremodelingbellevue.com/privacy/ |
 | Author / publisher | Bellevue Kitchen Pros |

@@ -1,6 +1,6 @@
 {
   "name": "kitchen-remodeling-cost",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Kitchen remodeling cost planner: split a kitchen remodel budget by line item, add sales tax, a contingency reserve and permits. Cost vs Value presets. Library + CLI, zero dependencies.",
   "keywords": ["kitchen-remodeling", "kitchen-remodel", "remodel-cost", "renovation", "budget", "calculator", "sales-tax", "home-improvement", "cli"],
   "homepage": "https://wakitchenremodelingbellevue.com/",

@@ -1,6 +1,6 @@
 [package]
 name = "kitchen-remodeling-cost"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 description = "Kitchen remodeling cost planner: split a kitchen remodel budget by line item, add sales tax, a contingency reserve and permits. Library + CLI, no dependencies."
 license = "MIT"
